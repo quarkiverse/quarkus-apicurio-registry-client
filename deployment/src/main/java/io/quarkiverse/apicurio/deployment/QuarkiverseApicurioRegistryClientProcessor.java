@@ -18,9 +18,9 @@ class QuarkiverseApicurioRegistryClientProcessor {
 
     private static final String FEATURE = "quarkiverse-apicurio-registry-client";
 
-    private static final String[] DTO_PACKAGES = new String[]{
-        "io.apicurio.registry.rest.beans",
-        "io.apicurio.registry.types"
+    private static final String[] DTO_PACKAGES = new String[] {
+            "io.apicurio.registry.rest.beans",
+            "io.apicurio.registry.types"
     };
 
     @BuildStep
