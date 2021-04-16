@@ -3,11 +3,14 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Quarkiverse Apicurio Registry Client is a Quarkus extension that provides the REST client to interact with [Apicurio Registry](https://www.apicur.io/registry/)
+Quarkiverse Apicurio Registry Client is a Quarkus extension that provides the REST client to interact with [Apicurio Registry](https://www.apicur.io/registry/).
 
 Apicurio Registry is a Schema and API registry useful to store AVRO schemas, OpenAPI designs, and many more formats ...
 
 This Quarkus extension provides the REST client dependency to interact with Apicurio Registry allowing your Quarkus applications to compile to native and still interact with Apicurio Registry.
+
+This Quarkus extension is meant to be used with Apicurio Registry 1.x libraries (such as `io.apicurio:apicurio-registry-utils-serde`), especially with the 1.3.x releases that use Retrofit.
+It is _not_ necessary for Apicurio Registry 2.x libraries (such as `io.apicurio:apicurio-registry-serdes-avro-serde`).
 
 ## Contributors ✨
 

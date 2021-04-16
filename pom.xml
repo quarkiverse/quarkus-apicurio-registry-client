@@ -26,13 +26,15 @@
         <surefire-plugin.version>3.0.0-M5</surefire-plugin.version>
 
         <apicurio.client.version>1.3.2.Final</apicurio.client.version>
-        <camel.quarkus.version>1.4.0</camel.quarkus.version>
+        <kotlinx.coroutines.version>1.4.3</kotlinx.coroutines.version>
+        <retrofit2.version>2.9.0</retrofit2.version> <!-- corresponds to what Apicurio Registry 1.3.2.Final uses -->
     </properties>
 
     <modules>
         <module>deployment</module>
         <module>runtime</module>
     </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -48,21 +50,19 @@
                 <artifactId>apicurio-registry-rest-client</artifactId>
                 <version>${apicurio.client.version}</version>
             </dependency>
-
             <dependency>
-                <groupId>org.apache.camel.quarkus</groupId>
-                <artifactId>camel-quarkus-support-retrofit</artifactId>
-                <version>${camel.quarkus.version}</version>
+                <groupId>com.squareup.retrofit2</groupId>
+                <artifactId>retrofit</artifactId>
+                <version>${retrofit2.version}</version>
             </dependency>
-
             <dependency>
-                <groupId>org.apache.camel.quarkus</groupId>
-                <artifactId>camel-quarkus-support-retrofit-deployment</artifactId>
-                <version>${camel.quarkus.version}</version>
+                <groupId>org.jetbrains.kotlinx</groupId>
+                <artifactId>kotlinx-coroutines-core-jvm</artifactId>
+                <version>${kotlinx.coroutines.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>
