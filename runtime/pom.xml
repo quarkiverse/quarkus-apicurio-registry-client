@@ -9,7 +9,8 @@
     </parent>
 
     <artifactId>quarkiverse-apicurio-registry-client</artifactId>
-    <name>Apicurio Registry client - Runtime</name>
+    <name>Apicurio Registry client</name>
+    <description>Allow applications to use Apicurio Registry client</description>
 
     <dependencies>
         <dependency>
