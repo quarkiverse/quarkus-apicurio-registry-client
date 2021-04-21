@@ -4,7 +4,7 @@
     <parent>
         <groupId>io.quarkiverse.apicurio</groupId>
         <artifactId>quarkiverse-apicurio-registry-client-parent</artifactId>
-        <version>0.0.2-SNAPSHOT</version>
+        <version>0.0.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
