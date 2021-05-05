@@ -9,8 +9,11 @@ Apicurio Registry is a Schema and API registry useful to store AVRO schemas, Ope
 
 This Quarkus extension provides the REST client dependency to interact with Apicurio Registry allowing your Quarkus applications to compile to native and still interact with Apicurio Registry.
 
-This Quarkus extension is meant to be used with Apicurio Registry 1.x libraries (such as `io.apicurio:apicurio-registry-utils-serde`), especially with the 1.3.x releases that use Retrofit.
+This Quarkus extension is meant to be used with Apicurio Registry 1.3.x libraries (such as `io.apicurio:apicurio-registry-utils-serde`) that use Retrofit.
 It is _not_ necessary for Apicurio Registry 2.x libraries (such as `io.apicurio:apicurio-registry-serdes-avro-serde`).
+
+If you use `quarkus-universe-bom` to manage Quarkus dependencies, make sure you explicitly manage Retrofit version to 2.9.0.
+Otherwise, `quarkus-universe-bom` will manage Retrofit to 2.5.0, which will cause native image compilation issues.
 
 ## Contributors ✨
 
